@@ -61,7 +61,6 @@ h1 {
 }
 
 section {
-  height: 100vh;
   margin-top: 8rem;
 }
 
@@ -90,8 +89,7 @@ a:hover {
   color: var(--color-white);
 }
 
-.btn,
-.btn-primary {
+.btn {
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
@@ -134,7 +132,10 @@ img {
   .container {
     width: var(--container-width-sm);
   }
+  section {
+    margin-top: 3rem;
+  }
   section > h2 {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
