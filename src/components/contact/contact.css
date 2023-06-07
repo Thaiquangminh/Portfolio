@@ -1,0 +1,70 @@
+.contact__container {
+  display: grid;
+  grid-template-columns: 34% 58%;
+  gap: 8%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option {
+  background: var(--color-bg-variant);
+  border-radius: 1.4rem;
+  padding: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.contact__option:hover {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+}
+
+/* -------------------- FORM --------------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  background: transparent;
+  resize: none;
+  border: 2px solid var(--color-primary-variant);
+  border-radius: 0.7rem;
+  color: var(--text-light);
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 60%;
+  }
+}
+
+/*--------------------------MEDIA SCREEN FOR SMALL-----------------------*/
+@media screen and (max-width: 600px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 90%;
+  }
+}
