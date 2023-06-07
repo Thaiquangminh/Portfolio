@@ -22,7 +22,7 @@ const Contact = () => {
           <article className="contact__option">
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
-            <h5>minh.thaiquang153@gmail.com</h5>
+            <h5>Thái Quang Minh</h5>
             <a href="https://m.me/mo.tequy/" target="_">
               Send a message
             </a>
