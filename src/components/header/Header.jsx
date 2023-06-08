@@ -5,8 +5,7 @@ import './header.css';
 
 const Header = () => {
   const handleScrollBottom = () => {
-    console.log(document.body.scrollHeight);
-
+    console.log(document.body);
     window.scrollTo(0, document.body.scrollHeight);
   };
   console.log(window.scrollX);

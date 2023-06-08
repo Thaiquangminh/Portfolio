@@ -17,6 +17,7 @@
 .testimonials:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
+  transition: var(--transition);
 }
 
 .client__name {

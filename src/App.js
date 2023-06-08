@@ -7,6 +7,8 @@ import NavBar from './components/nav/NavBar';
 import Portfolio from './components/portfolio/Portfolio';
 import Services from './components/services/Services';
 import Testimonials from './components/testimonials/Testimonials';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
+      <ToastContainer />
     </div>
   );
 }
