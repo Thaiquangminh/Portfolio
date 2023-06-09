@@ -43,13 +43,6 @@ const data = [
     demo: 'https://github.com/Thaiquangminh/castory',
   },
   {
-    id: 4,
-    image: IMG4,
-    title: 'Coach management',
-    github: 'https://github.com/Thaiquangminh/coach-management',
-    demo: 'https://github.com/Thaiquangminh',
-  },
-  {
     id: 6,
     image: IMG6,
     title: 'This is a portfolio item',
