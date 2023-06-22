@@ -17,10 +17,18 @@
   background: transparent;
 }
 
+.portfolio__item-image {
+  background-size: cover;
+  background-position: center;
+}
+
 .portfolio__item-image img {
   border-radius: 1.5rem;
   overflow: hidden;
   max-height: 190px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 
 .portfolio__item h3 {

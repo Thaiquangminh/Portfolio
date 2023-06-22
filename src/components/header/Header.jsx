@@ -1,5 +1,6 @@
 import Actions from './Actions';
 import ME from '../../assets/me.png';
+import ME_SMALL from '../../assets/me_small.png';
 import HeaderSocials from './HeaderSocials';
 import './header.css';
 
@@ -19,7 +20,10 @@ const Header = () => {
         <HeaderSocials />
 
         <div className="me">
-          <img src={ME} alt="" />
+          <div
+            className="blur__image"
+            style={{ backgroundImage: `url(${ME_SMALL})` }}></div>
+          <img src={ME} alt="" loading="lazy" />
         </div>
 
         <a
