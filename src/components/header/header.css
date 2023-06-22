@@ -39,6 +39,15 @@ header {
 }
 
 /* --------------------- ME ------------------- */
+.blur__image {
+  background-size: cover;
+  background-position: center;
+}
+
+.blur__image img {
+  object-fit: cover;
+  object-position: center;
+}
 
 .me {
   background: linear-gradient(var(--color-primary), transparent);

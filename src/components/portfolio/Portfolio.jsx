@@ -4,12 +4,19 @@ import IMG3 from '../../assets/portfolio3.jpg';
 import IMG4 from '../../assets/portfolio4.jpg';
 import IMG5 from '../../assets/portfolio5.png';
 import IMG6 from '../../assets/portfolio6.jpg';
+import IMG1_SMALL from '../../assets/portfolio1_small.jpeg';
+import IMG2_SMALL from '../../assets/portfolio2_small.jpeg';
+import IMG3_SMALL from '../../assets/portfolio3_small.jpeg';
+import IMG4_SMALL from '../../assets/portfolio4_small.jpeg';
+import IMG5_SMALL from '../../assets/portfolio5_small.png';
+import IMG6_SMALL from '../../assets/portfolio6_small.jpeg';
 import './portfolio.css';
 
 const data = [
   {
     id: 1,
     image: IMG1,
+    image_small: IMG1_SMALL,
     title: 'Nuxt Promote Yourself',
     github: 'https://github.com/Thaiquangminh/nuxt-promote-yourself',
     demo: 'https://github.com/Thaiquangminh',
@@ -17,6 +24,7 @@ const data = [
   {
     id: 5,
     image: IMG5,
+    image_small: IMG5_SMALL,
     title: 'VS Tech (UI)',
     github: 'https://github.com/Thaiquangminh/vs-shop',
     demo: 'https://vs-tech-ui.netlify.app/',
@@ -24,6 +32,7 @@ const data = [
   {
     id: 3,
     image: IMG3,
+    image_small: IMG3_SMALL,
     title: 'Pokemon List',
     github: 'https://github.com/Thaiquangminh/pokemonApi',
     demo: 'https://pokemonlst.netlify.app/',
@@ -31,6 +40,7 @@ const data = [
   {
     id: 4,
     image: IMG4,
+    image_small: IMG4_SMALL,
     title: 'Coach management',
     github: 'https://github.com/Thaiquangminh/coach-management',
     demo: 'https://tqcoaches.netlify.app/coaches',
@@ -38,6 +48,7 @@ const data = [
   {
     id: 2,
     image: IMG2,
+    image_small: IMG2_SMALL,
     title: 'English Website (UI)',
     github: 'https://github.com/Thaiquangminh/castory',
     demo: 'https://github.com/Thaiquangminh/castory',
@@ -45,6 +56,7 @@ const data = [
   {
     id: 6,
     image: IMG6,
+    image_small: IMG6_SMALL,
     title: 'This is a portfolio item',
     github: 'https://github.com/Thaiquangminh',
     demo: 'https://github.com/Thaiquangminh',
@@ -58,11 +70,13 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
+        {data.map(({ id, image, title, github, demo, image_small }) => {
           return (
             <article className="portfolio__item" key={id}>
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
+              <div
+                className="portfolio__item-image"
+                style={{ backgroundImage: `url(${image_small})` }}>
+                <img src={image} alt={title} loading="lazy" />
               </div>
               <h3>{title}</h3>
               <div className="portfolio__actions">
