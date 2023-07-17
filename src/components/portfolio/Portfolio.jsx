@@ -22,6 +22,22 @@ const data = [
     demo: 'https://github.com/Thaiquangminh',
   },
   {
+    id: 4,
+    image: IMG4,
+    image_small: IMG4_SMALL,
+    title: 'Blogs Vue',
+    github: 'https://github.com/Thaiquangminh/blogs',
+    demo: 'https://github.com/Thaiquangminh/blogs',
+  },
+  {
+    id: 6,
+    image: IMG6,
+    image_small: IMG6_SMALL,
+    title: 'Booking App',
+    github: 'https://github.com/Thaiquangminh/booking-app',
+    demo: 'https://github.com/Thaiquangminh/booking-app',
+  },
+  {
     id: 5,
     image: IMG5,
     image_small: IMG5_SMALL,
@@ -38,14 +54,6 @@ const data = [
     demo: 'https://pokemonlst.netlify.app/',
   },
   {
-    id: 4,
-    image: IMG4,
-    image_small: IMG4_SMALL,
-    title: 'Coach management',
-    github: 'https://github.com/Thaiquangminh/coach-management',
-    demo: 'https://tqcoaches.netlify.app/coaches',
-  },
-  {
     id: 2,
     image: IMG2,
     image_small: IMG2_SMALL,
@@ -53,14 +61,7 @@ const data = [
     github: 'https://github.com/Thaiquangminh/castory',
     demo: 'https://github.com/Thaiquangminh/castory',
   },
-  {
-    id: 6,
-    image: IMG6,
-    image_small: IMG6_SMALL,
-    title: 'This is a portfolio item',
-    github: 'https://github.com/Thaiquangminh',
-    demo: 'https://github.com/Thaiquangminh',
-  },
+
 ];
 
 const Portfolio = () => {
