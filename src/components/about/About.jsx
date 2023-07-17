@@ -36,10 +36,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            Mong muốn được học hỏi và trau dồi thêm kiến thức về lập trình web,
-            áp dụng những kiến thức đã được học vào những công việc trong đời
-            sống. Tìm được môi trường làm việc thoải mái, thân thiện để gắn bcó
-            và phát triển bản thân.
+            I am a skilled and passionate Front End Developer with 1 years of experience in creating visually appealing and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I possess expertise in translating design concepts into functional and responsive web interfaces. I am dedicated to delivering high-quality code and optimizing website performance to enhance the overall user experience.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
